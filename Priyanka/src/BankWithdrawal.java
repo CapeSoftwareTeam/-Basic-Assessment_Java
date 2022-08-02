@@ -17,16 +17,16 @@ public class BankWithdrawal {
 		System.out.println("user:" +value);
 	
 	    if(value.equalsIgnoreCase("Deposit")) {
-	    	this.heloo(1);
+	    	this.heloo(1,2);
 	    }
 	    else if(value.equalsIgnoreCase("Withdrawal")){
-	    	this.heloo("a");
+	    	this.heloo(2);
 	    }
 	    System.out.println("Thanks for your transaction");
 	}
 	
 	
-	public int heloo(int a) {
+	public int heloo(int a,int b) {
 		System.out.println("Your account balance:"+amt);
 		Scanner obj = new Scanner(System.in);
 		System.out.println("Banker: Type Your Deposit amount");
@@ -41,7 +41,7 @@ public class BankWithdrawal {
 		
 		
 	}
-	public int heloo(String a) {	
+	public int heloo(int a) {	
 		System.out.println("Your account balance:" +amt);
 		Scanner obj = new Scanner(System.in);
 		System.out.println("Banker: Type Your Withdrawal");
@@ -57,8 +57,17 @@ public class BankWithdrawal {
 		{
 			System.out.println("Insufficient Fund");
 			return amt;
-		}		
+		}
+		
+		
 	}
+	public float heloo(float n) {
+	float b=n*10;
+	System.out.println(b);
+		return n;
+		
+	}
+
 	
 
 		
@@ -67,7 +76,7 @@ public class BankWithdrawal {
 
 	public static void main(String[] args) {
 		BankWithdrawal obbj = new BankWithdrawal();
-		obbj.heloo();
+		obbj.heloo(10.6f);
 		// TODO Auto-generated method stub
 
 	}
