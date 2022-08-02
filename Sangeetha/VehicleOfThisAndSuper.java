@@ -1,5 +1,5 @@
 
-public class VehicleOfThisAndSuper {
+/*public class VehicleOfThisAndSuper {
 
 	int vegetable=30;
 }
@@ -17,25 +17,26 @@ class onion extends VehicleOfThisAndSuper{
         vege.display();
 	}
 
-	}
+	}*/
 
 
 
-/*public class VehicleOfThisAndSuper {
+public class VehicleOfThisAndSuper {
+	int fruit12; 
 	VehicleOfThisAndSuper(){
-	int fruit=45; 
-	System.out.println(" The price is "+fruit);
+		fruit12=45;
+	System.out.println(" The price is "+fruit12);
 }
 }
-class mango{
+class mango extends VehicleOfThisAndSuper {
 	mango(){
 		super();
-		int fruit= 25;
-		System.out.println("The Reduction price is "+fruit);
+	 int fruit =55;
+		
+		System.out.println("The Reduction price is "+super.fruit12);
 	}
 	public static void main(String args[]) {
 		mango mn= new mango();
 		
 	}
 }
-*/
